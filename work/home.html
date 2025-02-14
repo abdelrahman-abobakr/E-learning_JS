@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning system</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+     <link rel="stylesheet" href="home.css">
+    
+</head>
+<body>
+    <!-- header -->
+<header class="header" style="background-color: rgb(212, 200, 215);">
+    <section class="headersection">
+        <a href="#home" class="logo">EduVate.</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#courses">courses</a>
+            <a href="#reviews">reviews</a>
+            <a href="#contact">Contact</a>
+          
+        </nav>
+        <button id="login-btn" class="login-btn" onclick="window.location.href='../work/login.html'">Log in</button>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+</header>
+
+ <!-- home section -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+<h3>online
+    <span>education</span>
+</h3>
+<a href="#contact" class="btn">Contact us</a>
+            </div>
+            <div class="image">
+            <img src="resources/Kids Studying from Home-rafiki (3).png">
+            </div>
+        </div>
+    </section>
+<!-- counter section -->
+<section class="count">
+    <div class="box-counter">
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <div class="content">
+          <h3>150+</h3>
+          <p>courses</p>
+        </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-user-graduate"></i>
+            <div class="content">
+            <h3>1300+</h3>
+            <p>students</p>
+        </div>
+          </div>
+          <div class="box">
+            <i class="fas fa-chalkboard-user"></i>
+            <div class="content">
+            <h3>80+</h3>
+            <p>teachers</p>
+        </div>
+          </div>
+          
+          <div class="box">
+            <i class="fas fa-face-smile"></i>
+            <div class="content">
+            <h3>100%</h3>
+            <p>staisfaction</p>
+        </div>
+          </div>
+    </div>
+</section>
+ <!-- about section -->
+<section class="about" id="about">
+    <div class="row">
+<div class="image">
+    <img src="resources/Questions-amico.png" alt="">
+</div>
+<div class="content">
+    <h3>why choose us</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, et fugiat sapiente, eos sunt odit quibusdam ut quos obcaecati suscipit consectetur maxime asperiores vel deserunt iure doloribus eligendi est esse!</p>
+    <a href="#contact" class="btn">contact us</a>
+</div>
+    </div>
+</section>
+
+
+<section class="courses" id="courses">
+    <h1 class="heading">Our <span>Categories</span></h1>
+
+    <!-- Courses Slider -->
+    <div class="swiper course-slider">
+        <div class="swiper-wrapper">
+            <!-- Web Development Course -->
+            <div class="swiper-slide slide" data-category="web-development">
+                <img src="resources/Website designer-amico.png" alt="">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+
+            <!-- Digital Marketing Course -->
+            <div class="swiper-slide slide" data-category="digital-marketing">
+                <img src="resources/Mobile Marketing-cuate.png" alt="">
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+
+            <!-- Graphic Design Course -->
+            <div class="swiper-slide slide" data-category="graphic-design">
+                <img src="resources/Website Creator-bro.png" alt="">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+
+            <!-- Science Course -->
+            <div class="swiper-slide slide" data-category="science">
+                <img src="resources/Science-pana.png" alt="">
+                <h3>Science</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+
+<!-- reviews section -->
+<section class="reviews" id="reviews">
+<h1 class="heading"> student's <span>reviews</span></h1>
+<div class="swiper reviews-slider">
+<div class="swiper-wrapper">
+  <div class="swiper-slide slide">
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    Veniam iste consequuntur quae aliquid molestiae debitis incidunt labore,
+     reiciendis nisi consequatur earum, 
+     ullam expedita minima error dolore dignissimos fuga inventore totam.</p>
+     <div class="user">
+ <img src="" alt="">
+ <div class="user-info">
+ <h3>omar khaled</h3>
+     <div class="stars">
+    <i class="fas fa-star"></i>
+   <i class="fas fa-star"></i>
+   <i class="fas fa-star"></i>
+   <i class="fas fa-star"></i>
+  <i class="fas fa-star-half-alt"></i>
+ </div>
+ </div>
+ </div>
+</div>
+    <div class="swiper-slide slide">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Veniam iste consequuntur quae aliquid molestiae debitis incidunt labore,
+      reiciendis nisi consequatur earum, 
+       ullam expedita minima error dolore dignissimos fuga inventore totam.</p>
+       <div class="user">
+         <img src="" alt="">
+         <div class="user-info">
+          <h3>heba mahmoud</h3>
+           <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+                   </div>
+               </div>
+        </div>
+   </div>
+   <div class="swiper-slide slide">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Veniam iste consequuntur quae aliquid molestiae debitis incidunt labore,
+        reiciendis nisi consequatur earum, 
+       ullam expedita minima error dolore dignissimos fuga inventore totam.</p>
+   <div class="user">
+           <img src="" alt="">
+        <div class="user-info">
+               <h3>abdelrahman</h3>
+               <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+               </div>
+           </div>
+    </div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+ </div>
+</section>
+<!-- contact section -->
+<section id="contact" class="contact">
+    <h1 class="heading"><span>contact</span> us</h1>
+    <div class="row">
+        <div class="image">
+            <img src="resources/Contact us-cuate.png" alt="">
+        </div>
+        <form action="" method="post">
+            <span>your name</span>
+            <input type="text" required placeholder="enter your full name" maxlength="50" name="name" class="box">
+            <span>your email</span>
+            <input type="email" required placeholder="enter your email" maxlength="50" name="name" class="box">
+            <span>your number </span>
+            <input type="number" required placeholder="enter your number" maxlength="50" name="name" class="box"
+            onkeypress="if(this.value.length == 10) return false;">
+        
+<input type="submit" value="send message" class="btn" name="send">   
+</form>
+</div>
+</section>
+<!-- footersection -->
+
+<footer class="footer">
+    <section>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-youtube"></a>
+        
+        </div>
+        <div class="credit">
+            &copy;copyright @ 2025 by <span></span>| all rights reserved!
+        </div>
+    </section>
+</footer>
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    
+<script src="./home.js"></script>
+</body>
+</html>

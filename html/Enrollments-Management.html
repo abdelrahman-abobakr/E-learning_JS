@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - eLearning App</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons" media="all">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <img src="/manager.png" alt="Admin" class="sidebar-logo">
+        <h2>Admin Dashboard</h2>
+      </div>
+      <ul>
+        <li><a href="/html/categories.html">Categories</a></li>
+        <li><a href="/html/courses.html">Courses</a></li>
+        <li><a href="/html//Enrollments-Management.html" >Enrollments</a></li>
+        <li><a href="/html//StudentProgress.html" >Students progress</a></li>
+        <li><button id="logout-btn">Logout</button></li>
+      </ul>
+    </div>
+    <!-- Main Content -->
+    <div class="main-content">
+      <header>
+        <h1>Welcome, Admin!</h1>
+   
+      </header>
+
+      <!-- Stats Section -->
+      <section class="stats">
+        <div class="stat-card">
+          <h3>Total Enrollments Requests</h3>
+          <p id="total-Enrollments">0</p>
+        </div>
+      
+      </section>
+
+      <section class="Enrollments-table">
+    <h2>Enrollments</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>notification</th>
+              <th>Student-Name</th> 
+              <th>Course-Title</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="Enrollments-Body"></tbody>
+        </table>
+      </section>
+      <script type="module" src="/javascript/Enrollments.js"></script>
+      <script src="/javascript/logout.js"></script>
+
+
+</body>
+</html>

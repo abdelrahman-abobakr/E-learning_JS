@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - eLearning App</title>
+  <link rel="stylesheet" href="/student/studentStyle.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1 style="text-align: center;">welcome back</h1>
+  <div class="dashboard">
+    <main>
+      <div class="sidebar">
+        <h2>Student Dashboard</h2>
+        <ul>
+          <li><a href="/student/enrolledCourses.html">My courses</a></li>
+          <li><a href="/student/maincourses.html">Courses</a></li>
+          <li><button id="logout-btn">Logout</button></li>
+        </ul>
+      </div>
+      <!-- Main Content -->
+      <div class="course-container" id="course-list">
+        <!-- Courses will be dynamically loaded here -->
+      </div>
+    </main>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script type="module" src="maincourses.js"></script>
+  <!-- <script src="./maincourse.js"></script> -->
+  <script src="/javascript/logout.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - eLearning App</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <div class="sidebar"> 
+      <div class="sidebar-header">
+        <img src="/manager.png" alt="Admin" class="sidebar-logo">
+        <h2>Admin Dashboard</h2>
+      </div>
+      <ul>
+        <li><a href="/html/categories.html">Categories</a></li>
+        <li><a href="/html/courses.html">Courses</a></li>
+        <li><a href="/html/Enrollments-Management.html">Enrollments</a></li>
+        <li><a href="/html/StudentProgress.html">Students progress</a></li>
+        <li><button id="logout-btn">Logout</button></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header>
+        <h1>Welcome, Admin!</h1>
+      </header>
+
+      <!-- Stats Section -->
+      <section class="stats">
+        <div class="stat-card">
+          <h3>Total Students</h3>
+          <p id="total-students">0</p>
+        </div>
+        <div class="stat-card">
+          <h3>Total Courses Enrolled</h3>
+          <p id="Enrolled">$0</p>
+        </div>
+      </section>
+
+      <!-- Courses Table -->
+      <section class="StudentProgress-table">
+        <table>
+          <thead>
+            <tr>  
+              <th>ID</th>
+              <th>Student Name</th> 
+              <th>Email</th>
+              <th>courses</th>
+              <th>Total Student courses Enrolled</th>
+            </tr>
+          </thead>
+          <tbody id="student-Body"></tbody>
+        </table>
+      </section>
+    </div>
+<script type="module" src="/javascript/StudentProgress.js"></script>
+<script src="/javascript/logout.js"></script>
+
+</body>
+</html>

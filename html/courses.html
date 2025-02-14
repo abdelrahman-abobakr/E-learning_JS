@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - eLearning App</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <img src="/manager.png" alt="Admin" class="sidebar-logo">
+        <h2>Admin Dashboard</h2>
+      </div>
+      <ul>
+        <li><a href="/html/categories.html">Categories</a></li>
+        <li><a href="/html/courses.html">Courses</a></li>
+        <li><a href="/html//Enrollments-Management.html" >Enrollments</a></li>
+        <li><a href="/html//StudentProgress.html" >Students progress</a></li>
+        <li><button id="logout-btn">Logout</button></li>
+      </ul>
+    </div>
+    <!-- Main Content -->
+    <div class="main-content">
+      <header>
+        <h1>   Welcome, Admin!</h1>
+      </header>
+
+      <!-- Stats Section -->
+      <section class="stats">
+        <div class="stat-card">
+          <h3>Total Courses</h3>
+          <p id="total-courses">0</p>
+        </div>
+      </section>
+
+      <!-- Courses Table -->
+      <section class="courses-table">
+        <button id="add-course-btn" style="width: 100px ;float:right">Add Course</button>
+        <button id="delete" style="width: 100px;">Delete All Data</button>
+
+        <input type="text"placeholder="search" id="search">
+
+        <h2>Courses</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Instructor</th>
+              <th>description</th>
+              <th>Duration</th>
+              <th>Price</th>
+              <th>Category</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="courses-Body"></tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+
+  <!-- Course Modal -->
+  <div id="course-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title">Add New Course</h2>
+      <form id="course-form">
+        <input type="hidden" id="course-id">
+
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" id="title" required>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Choose a category:</label>
+
+          <select name="category" id="category" class="dropdown">
+            
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="instructor">Instructor:</label>
+          <input type="text" id="instructor" required>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description:</label>
+            <textarea style="height: 150px; resize: none;"id="description" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="duration">Duration (hours):</label>
+          <input type="number" id="duration" required>
+        </div>
+
+        <div class="form-group">
+          <label for="price">Price ($):</label>
+          <input type="number" id="price" required>
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image Source:</label>
+          <input type="text" id="image" required>
+        </div>
+
+        <!-- Video Upload Section -->
+        <div class="form-group" id="video-form">
+          <div class="add-button-container">
+            <button type="button" id="add-video" class="add-btn blue">Add Video</button>
+          </div>
+        </div>
+
+        <!-- PDF Upload Section -->
+        <div class="form-group" id="pdf-form">
+          <div class="add-button-container">
+            <button type="button" id="add-pdf" class="add-btn red">Add PDF</button>
+          </div>
+        </div>
+
+        <button type="submit" id="save-btn">Save Course</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="/javascript/courses.js"></script>
+  <script src="/javascript/logout.js"></script>
+</body>
+</html>
